@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services | John Matunga</title>
+  <link rel="stylesheet" href="css/services.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content" style="display: flex; align-items: center; gap: 15px;">
+        <img src="images/JMATUNGA_logo.png" alt="JMatunga Logo" class="header-logo" style="height: 50px;" loading="lazy" />
+        <h1 class="logo" style="font-size: 24px; color: #0a0f2c; margin: 0;">John Matunga</h1>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cv.html">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="container">
+      <h2>What I Offer</h2>
+
+      <div class="service-box">
+        <h3><span class="material-icons">app_shortcut</span> Custom App Development</h3>
+        <p>Mobile and desktop applications built to solve specific problems for individuals, businesses, and organizations.</p>
+        <div class="pricing-tier">
+          <p><strong>Starter:</strong> KSh 5,000</p>
+          <p><strong>Pro:</strong> KSh 12,000</p>
+          <p><strong>Enterprise:</strong> Custom Quote</p>
+        </div>
+        <a href="contact.html#service-request" class="btn-service">Get This Service</a>
+      </div>
+
+      <div class="service-box">
+        <h3><span class="material-icons">security</span> Secure Systems & Websites</h3>
+        <p>Secure, fast websites and custom systems to protect user data and prevent fraud or misuse.</p>
+        <div class="pricing-tier">
+          <p><strong>Starter:</strong> KSh 7,000</p>
+          <p><strong>Pro:</strong> KSh 15,000</p>
+          <p><strong>Enterprise:</strong> Custom Quote</p>
+        </div>
+        <a href="contact.html#service-request" class="btn-service">Get This Service</a>
+      </div>
+
+      <div class="service-box">
+        <h3><span class="material-icons">payments</span> Payment System Integration</h3>
+        <p>Integration of M-Pesa, PayPal, and other gateways for seamless real-time payments.</p>
+        <div class="pricing-tier">
+          <p><strong>Basic:</strong> KSh 3,000</p>
+          <p><strong>Full Integration:</strong> KSh 8,000</p>
+        </div>
+        <a href="contact.html#service-request" class="btn-service">Get This Service</a>
+      </div>
+
+      <div class="service-box">
+        <h3><span class="material-icons">support_agent</span> Tech Consultation & Support</h3>
+        <p>Guidance and technical support to help you build or improve your digital tools.</p>
+        <div class="pricing-tier">
+          <p><strong>1hr Session:</strong> KSh 1,000</p>
+          <p><strong>Project-based:</strong> Contact for Quote</p>
+        </div>
+        <a href="contact.html#service-request" class="btn-service">Get This Service</a>
+      </div>
+
+      <!-- 📥 PDF Download -->
+      <a href="downloads/JohnMatunga_Services.pdf" class="btn-download" download>📥 Download Full Service Brochure (PDF)</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <p class="footer-copy">&copy; <script>document.write(new Date().getFullYear());</script> <strong>Apex Heal Eye Centre</strong>. All rights reserved.</p>
+        <p class="footer-credit">Made with 🧠💡 & <span class="pulse-heart">❤️</span> by <strong>JMatunga</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Embedded Styles -->
+  <style>
+    .btn-service {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #00e5ff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .btn-service:hover { background: #00bcd4; }
+
+    .btn-download {
+      display: inline-block;
+      margin: 30px auto;
+      background: #0a0f2c;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn-download:hover { background: #121d3a; }
+
+    .pricing-tier {
+      font-size: 14px;
+      margin-top: 10px;
+      background: #f5f8ff;
+      padding: 10px;
+      border-left: 4px solid #00e5ff;
+    }
+
+    .site-footer {
+      background: linear-gradient(135deg, #0a0f2c, #121d3a);
+      color: #e0e7ff;
+      padding: 60px 20px 40px;
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      text-align: center;
+      box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.6);
+      border-top: 2px solid #00e5ff44;
+    }
+
+    .footer-container { max-width: 1200px; margin: auto; }
+    .footer-content p { margin: 10px 0; font-size: 16px; letter-spacing: 0.3px; }
+    .footer-credit { font-style: italic; color: #a0c4ff; }
+
+    .pulse-heart {
+      animation: pulse 1.5s infinite;
+      display: inline-block;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); color: #00e5ff; }
+      50% { transform: scale(1.2); color: #7df9ff; }
+      100% { transform: scale(1); color: #00e5ff; }
+    }
+
+    @media (max-width: 600px) {
+      .site-footer { padding: 40px 10px; }
+      .footer-content p { font-size: 14px; }
+    }
+  </style>
+<script>
+  // Smooth Back to Top (hidden upgrade)
+  const backToTop = document.createElement('button');
+  backToTop.innerText = '↑';
+  backToTop.id = 'backToTop';
+  document.body.appendChild(backToTop);
+  backToTop.style.cssText = `
+    position:fixed;bottom:30px;right:30px;padding:10px;
+    border:none;border-radius:50%;background:#00e5ff;
+    color:#000;font-size:18px;display:none;z-index:1000;
+  `;
+  
+  window.addEventListener('scroll', () => {
+    backToTop.style.display = window.scrollY > 200 ? 'block' : 'none';
+  });
+  backToTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+  </script>
+  
+</body>
+</html>

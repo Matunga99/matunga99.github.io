@@ -1,0 +1,245 @@
+/* 🌌 Cosmic Projects Page Theme – by John Matunga */
+
+:root {
+    --cosmic-navy: #0a0f2c;
+    --ether-cyan: #00e5ff;
+    --stardust-silver: #cbd5e1;
+    --lunar-glow: #e0e7ff;
+    --galactic-purple: #5b21b6;
+    --solar-flare: #ff6b6b;
+    --neon-lime: #a3f7bf;
+    --infinite-void: #000000;
+    --white: #ffffff;
+    --gray-dark: #4b5563;
+    --gray-light: #f3f4f6;
+    --text-color: #1f2937;
+    --border-radius: 10px;
+    --font-main: 'Poppins', sans-serif;
+    --glow: 0 0 20px var(--ether-cyan);
+    --glow-anim: pulseGlow 2s ease-in-out infinite alternate;
+    --quantum-flare: rgba(0, 229, 255, 0.05);
+    --matrix-glow: rgba(91, 33, 182, 0.08);
+  }
+  
+  body {
+    font-family: var(--font-main);
+    background: linear-gradient(145deg, var(--cosmic-navy), var(--galactic-purple));
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--lunar-glow);
+    line-height: 1.7;
+  }
+  
+ /* ===== 🔝 Header ===== */
+/* Header */
+.header {
+    position: static;  /* normal scrolling header */
+    width: 100%;
+    background: linear-gradient(90deg, var(--cosmic-navy), var(--galactic-purple));
+    padding: 20px 0;
+    box-shadow: 0 8px 24px rgba(0, 229, 255, 0.2);
+    backdrop-filter: blur(4px);
+    z-index: auto;
+    overflow: visible; /* no internal scrolling */
+    white-space: normal; /* allow wrapping if needed */
+  }
+  
+  /* Flex container inside header */
+  .header .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;       /* allow wrapping on small screens */
+    min-width: 600px;      /* triggers horizontal scroll on narrow viewports */
+  }
+  
+  /* Logo styling */
+  .header-logo {
+    height: 50px;
+    flex-shrink: 0;        /* prevent shrinking */
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--ether-cyan);
+    text-shadow: 0 0 5px var(--ether-cyan);
+    user-select: none;
+  }
+  
+  /* ===== 🔗 Navigation ===== */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    color: var(--stardust-silver);
+    text-decoration: none;
+    font-weight: 300;
+    position: relative;
+  }
+  
+  .nav-links a:hover {
+    color: var(--ether-cyan);
+  }
+  
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 0;
+    background: var(--ether-cyan);
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  /* ===== 🚀 Hero Heading ===== */
+  .projects-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--neon-lime);
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px var(--ether-cyan);
+    background: linear-gradient(90deg, var(--ether-cyan), var(--neon-lime));
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* ===== 🧠 Projects Section ===== */
+  .projects-section {
+    padding: 60px 20px;
+    background: linear-gradient(180deg, var(--cosmic-navy), #0f112b);
+    border-top: 1px solid var(--matrix-glow);
+    border-bottom: 1px solid var(--matrix-glow);
+  }
+  
+  .project-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  .project-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid var(--ether-cyan);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.05);
+    transition: 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 24px rgba(0, 229, 255, 0.2);
+  }
+  
+  .project-card h3 {
+    color: var(--neon-lime);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px var(--ether-cyan);
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    color: var(--stardust-silver);
+    margin-bottom: 10px;
+  }
+  
+  .project-card a {
+    text-decoration: none;
+    color: var(--ether-cyan);
+    font-weight: bold;
+  }
+  
+  .project-card a:hover {
+    text-decoration: underline;
+    color: var(--solar-flare);
+  }
+  
+  /* ===== 🔙 Back to Top Button ===== */
+  #backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--ether-cyan);
+    color: var(--cosmic-navy);
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 22px;
+    display: none;
+    z-index: 999;
+    box-shadow: var(--glow);
+    animation: var(--glow-anim);
+    border: none;
+    cursor: pointer;
+  }
+  
+  #backToTop:hover {
+    background: var(--galactic-purple);
+    color: var(--white);
+  }
+  
+  /* ===== 🧠 Footer ===== */
+  .site-footer {
+    background-color: #111827;
+    padding: 30px 15px;
+    text-align: center;
+    color: #ccc;
+    margin-top: 60px;
+  }
+  
+  .footer-copy {
+    font-size: 14px;
+  }
+  
+  .footer-credit {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .footer-credit .pulse-heart {
+    display: inline-block;
+    color: red;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+  }
+  
+  /* ===== 📱 Responsive Fixes ===== */
+  @media (max-width: 768px) {
+    .projects-section h2 {
+      font-size: 2rem;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* ===== 🔮 Glow Animations ===== */
+  @keyframes pulseGlow {
+    from { box-shadow: 0 0 10px var(--ether-cyan); }
+    to { box-shadow: 0 0 30px var(--ether-cyan), 0 0 60px var(--galactic-purple); }
+  }
+  

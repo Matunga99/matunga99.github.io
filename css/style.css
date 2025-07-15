@@ -1,0 +1,471 @@
+/* 🧠 Cosmic About Page Theme – Engineered by John Matunga */
+/* Designed to outlast time, AI, and human understanding */
+
+:root {
+    --cosmic-navy: #0a0f2c;
+    --ether-cyan: #00e5ff;
+    --stardust-silver: #cbd5e1;
+    --lunar-glow: #e0e7ff;
+    --galactic-purple: #5b21b6;
+    --white: #ffffff;
+    --gray-dark: #4b5563;
+    --gray-light: #f3f4f6;
+    --text-color: #e0e7ff;
+    --border-radius: 10px;
+    --transition: 0.3s ease;
+    --font-main: 'Poppins', sans-serif;
+  
+    /* Hidden ultra modes for future modules */
+    --quantum-flare: rgba(0, 229, 255, 0.05);
+    --matrix-glow: rgba(91, 33, 182, 0.08);
+    --solar-ink: #000001;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+    scroll-behavior: smooth;
+    user-select: none;
+  }
+  
+  /* BODY */
+  body {
+    background: linear-gradient(145deg, var(--cosmic-navy), var(--galactic-purple));
+    background-attachment: fixed;
+    color: var(--text-color);
+    font-family: var(--font-main);
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  /* CONTAINER */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 5;
+  }
+  
+  /* HEADER */
+  .header {
+    background: linear-gradient(90deg, var(--cosmic-navy), var(--galactic-purple));
+    padding: 20px 0;
+    box-shadow: 0 8px 24px var(--quantum-flare);
+    backdrop-filter: blur(4px);
+  }
+  
+  .header .logo {
+    font-size: 26px;
+    color: var(--ether-cyan);
+    font-weight: 700;
+    letter-spacing: 1px;
+    filter: drop-shadow(0 0 4px var(--ether-cyan));
+  }
+  
+  /* NAVIGATION */
+  nav {
+    margin-top: 15px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--stardust-silver);
+    font-weight: 300;
+    position: relative;
+  }
+  
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+    background: var(--ether-cyan);
+    transition: width 0.4s ease;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links a:hover {
+    color: var(--ether-cyan);
+  }
+  
+  /* ABOUT SECTION */
+  .about-section {
+    padding: 80px 0;
+    background: linear-gradient(180deg, var(--cosmic-navy), #0c0c34);
+    border-top: 1px solid var(--matrix-glow);
+    border-bottom: 1px solid var(--matrix-glow);
+    position: relative;
+    z-index: 2;
+  }
+  
+  .about-section h2 {
+    text-align: center;
+    font-size: 34px;
+    color: var(--ether-cyan);
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .about-section h3 {
+    font-size: 24px;
+    color: var(--galactic-purple);
+    margin: 40px 0 10px;
+    text-align: center;
+  }
+  
+  .about-section p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--lunar-glow);
+  }
+  
+  .about-section ul {
+    padding-left: 25px;
+    margin-top: 20px;
+    color: var(--stardust-silver);
+    line-height: 1.8;
+  }
+  
+  .about-section ul li::marker {
+    color: var(--ether-cyan);
+  }
+  
+  .about-section img {
+    display: block;
+    margin: 0 auto 30px;
+    border: 3px solid var(--ether-cyan);
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.3);
+    border-radius: var(--border-radius);
+    animation: glowFade 5s infinite alternate;
+  }
+  
+  /* MYSTIC GLOW ANIMATION */
+  @keyframes glowFade {
+    0% { box-shadow: 0 0 10px var(--ether-cyan); }
+    100% { box-shadow: 0 0 30px var(--galactic-purple); }
+  }
+  
+  /* FINAL QUOTE */
+  .about-section p:last-child {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--ether-cyan);
+    text-shadow: 0 0 6px var(--galactic-purple);
+  }
+  
+  /* FOOTER */
+  .site-footer {
+    background-color: #111827;
+    padding: 40px 20px;
+    text-align: center;
+    color: #ccc;
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .footer-copy,
+  .footer-credit {
+    margin-bottom: 8px;
+  }
+  
+  .footer-credit span.pulse-heart {
+    display: inline-block;
+    color: red;
+    animation: pulse 1.2s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+  }
+  
+  /* BACKGROUND STARFIELD (HIDDEN SYSTEMS) */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: 0;
+    animation: stars 60s linear infinite;
+  }
+  
+  @keyframes stars {
+    from { background-position: 0 0; }
+    to { background-position: -1000px 1000px; }
+  }
+  
+  /* RESPONSIVENESS */
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-section p {
+      text-align: left;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-section img {
+      max-width: 90%;
+    }
+  }
+  
+
+
+
+
+
+
+  /* Cosmic CV Extended CSS Theme */
+
+:root {
+    --cosmic-navy: #0a0f2c;
+    --ether-cyan: #00e5ff;
+    --stardust-silver: #cbd5e1;
+    --lunar-glow: #e0e7ff;
+    --infinite-void: #000000;
+    --galactic-purple: #5b21b6;
+    --primary-color: #00e5ff;
+    --secondary-color: #5b21b6;
+    --white: #ffffff;
+    --gray-dark: #4b5563;
+    --gray-light: #f3f4f6;
+    --text-color: #1f2937;
+    --border-radius: 8px;
+  }
+  
+  body {
+    background-color: var(--cosmic-navy);
+    color: var(--lunar-glow);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    position: relative;
+  }
+  
+  /* Animated SVG Background */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('images/starfield.svg') repeat;
+    animation: backgroundShift 300s linear infinite;
+    z-index: -1;
+    opacity: 0.05;
+  }
+  
+  @keyframes backgroundShift {
+    0% { background-position: 0 0; }
+    100% { background-position: -10000px 10000px; }
+  }
+  
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--cosmic-navy);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--ether-cyan);
+    border-radius: 10px;
+  }
+  
+  /* Back to Top Button */
+  #backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--ether-cyan);
+    color: var(--cosmic-navy);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 0 12px var(--ether-cyan);
+    cursor: pointer;
+  }
+  
+  #backToTop:hover {
+    background: var(--galactic-purple);
+    color: var(--white);
+  }
+  
+  /* WhatsApp Chat Bubble */
+  .whatsapp-chat {
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: background 0.3s ease;
+  }
+  
+  .whatsapp-chat:hover {
+    background-color: #128C7E;
+  }
+  
+  .whatsapp-chat img {
+    width: 28px;
+    height: 28px;
+  }
+  
+  /* Print Styles */
+  @media print {
+    body {
+      background-color: white;
+      color: black;
+    }
+    .header, .footer, #backToTop, .whatsapp-chat {
+      display: none;
+    }
+    .cv-wrapper {
+      box-shadow: none;
+    }
+  }
+  
+  /* Animated Border for Avatar */
+  .sidebar img.avatar {
+    animation: borderPulse 2s infinite ease-in-out;
+  }
+  
+  @keyframes borderPulse {
+    0% { border-color: var(--ether-cyan); }
+    50% { border-color: var(--galactic-purple); }
+    100% { border-color: var(--ether-cyan); }
+  }
+  
+  /* Animated Button Glow */
+  .btn {
+    box-shadow: 0 0 8px var(--ether-cyan);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 0 18px var(--ether-cyan);
+    background-color: var(--galactic-purple);
+  }
+  
+  /* Badge/Skill Chips */
+  .badge {
+    display: inline-block;
+    background: var(--ether-cyan);
+    color: var(--cosmic-navy);
+    padding: 6px 12px;
+    margin: 5px;
+    font-size: 14px;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+  
+  /* Timeline for Experience */
+  .timeline {
+    position: relative;
+    margin: 40px 0;
+    padding-left: 30px;
+    border-left: 3px solid var(--ether-cyan);
+  }
+  
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    background: var(--ether-cyan);
+    border-radius: 50%;
+  }
+  
+  .timeline .event {
+    margin-bottom: 30px;
+  }
+  
+  .timeline .event h4 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: var(--text-color);
+  }
+  
+  .timeline .event span {
+    font-size: 13px;
+    color: var(--gray-dark);
+  }
+  
+  .timeline .event p {
+    margin: 8px 0 0;
+    color: var(--gray-dark);
+    font-size: 15px;
+  }
+  
+  /* Mobile Menu Toggle (optional) */
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--ether-cyan);
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    .menu-toggle {
+      display: block;
+      margin-left: auto;
+    }
+  }
+  
+
+
+
+
+
+

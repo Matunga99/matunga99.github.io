@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About John Matunga</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content" style="display: flex; align-items: center; gap: 15px;">
+        <!-- 🟨 Your Logo Image -->
+        <img src="images/JMATUNGA_logo.png" alt="JMatunga Logo" class="header-logo" style="height: 50px;" loading="lazy" />
+  
+        <!-- 🔤 Your Name -->
+        <h1 class="logo" style="font-size: 24px; color: #0a0f2c; margin: 0;">John Matunga</h1>
+      </div>
+  
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cv.html">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <section class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+  
+      <img src="images/john-matunga.png" alt="John Matunga Photo" style="max-width: 200px; border-radius: 12px; margin: 20px 0;" loading="lazy" />
+  
+      <p>
+        I’m <strong>John Matunga</strong> — a developer, builder, and human system designed not just to create software, but to leave behind something far greater than myself.
+      </p>
+  
+      <p>
+        I come from a place where struggle fuels creativity, and dreams demand action. I learned early that knowledge alone is not enough — it must become solutions. That’s why I create: websites, apps, systems, platforms — not just for profit, but for purpose.
+      </p>
+  
+      <h3>🧠 What I Am</h3>
+      <p>
+        I am not here to tell stories. I’m here to build systems — systems that think, systems that scale, systems that remain after I'm gone. My life is my logbook. My work is my voice. My actions are my belief. I’m not trying to be famous — I’m trying to be useful.
+      </p>
+  
+      <h3>🌍 What I Believe</h3>
+      <ul style="text-align: left; max-width: 700px; margin: auto;">
+        <li>⚙️ That every life has a design.</li>
+        <li>📡 That technology is not just power — it is responsibility.</li>
+        <li>🤝 That no person should be left behind because of poverty or lack of access.</li>
+        <li>🔒 That security, privacy, and empowerment must go hand-in-hand.</li>
+        <li>🧠 That the combination of human mind and AI can rebuild entire communities.</li>
+        <li>⏳ That purpose must outlive the body — forever written in the work I leave behind.</li>
+      </ul>
+  
+      <h3>🛠️ What I Do</h3>
+      <p>
+        I create tools that empower others. I’ve built apps, websites, systems, and platforms that solve real problems. From payment integrations like M-Pesa, to hospital systems, betting platforms, secure login systems, and more — I build for today with a vision of tomorrow.
+      </p>
+  
+      <p>
+        I don’t build for applause — I build for legacy. I work to create employment, inspire new developers, and open doors for youth in villages and cities alike. I mentor. I document. I share. I live what I teach.
+      </p>
+  
+      <h3>🔥 My Mission</h3>
+      <p>
+        To awaken those forgotten. To empower the talented. To build employment in villages and towns. To let no graduate be idle. To allow every youth with a laptop to become a light in their home.
+      </p>
+  
+      <p>
+        This mission is not a slogan. It’s code I write. It's systems I launch. It's problems I solve — one line, one app, one person at a time. My hands are for work, my tools are digital, and my spirit is unstoppable.
+      </p>
+  
+      <h3>🚀 Vision for 10,000+ Years</h3>
+      <p>
+        When I’m no longer here, I want people to scan my name, or my logbook, and see more than a man. I want them to find instructions, systems, blueprints, and wisdom. I want to be a point of origin for others to rise.
+      </p>
+  
+      <p>
+        My legacy is not on display — it’s in motion. Whether it's through a QR code, a poster, a system, or a GitHub repo, I want people to continue what I began. Because I believe God gave me this brain, this time, and this life not just to live... but to launch a legacy.
+      </p>
+  
+      <p style="font-weight: bold; font-size: 20px; text-align: center; margin-top: 30px;">
+        “Let my life be a system, not a story.” – JMatunga
+      </p>
+    </div>
+  </section>
+  
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <p class="footer-copy">
+          &copy; <?php echo date('Y'); ?> 
+          <strong>Apex Heal Eye Centre</strong>. All rights reserved.
+        </p>
+        <p class="footer-credit">
+          Made with 🧠💡 & <span class="pulse-heart">❤️</span> by <strong>JMatunga</strong>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  </style>
+  <script>
+    // Smooth Back to Top (hidden upgrade)
+    const backToTop = document.createElement('button');
+    backToTop.innerText = '↑';
+    backToTop.id = 'backToTop';
+    document.body.appendChild(backToTop);
+    backToTop.style.cssText = `
+      position:fixed;bottom:30px;right:30px;padding:10px;
+      border:none;border-radius:50%;background:#00e5ff;
+      color:#000;font-size:18px;display:none;z-index:1000;
+    `;
+    
+    window.addEventListener('scroll', () => {
+      backToTop.style.display = window.scrollY > 200 ? 'block' : 'none';
+    });
+    backToTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+    </script>
+    
+</body>
+</html>

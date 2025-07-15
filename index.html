@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0f2c" />
+    <meta name="description" content="Explore the vision, services, and innovations of John Matunga — built for the next 10,000 years." />
+    <title>Services | John Matunga</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content" style="display: flex; align-items: center; gap: 15px;">
+          <!-- 🟨 Your Logo Image -->
+          <img src="images/JMATUNGA_logo.png" alt="JMatunga Logo" class="header-logo" style="height: 50px;" loading="lazy" />
+          <!-- 🔤 Your Name -->
+          <h1 class="logo" style="font-size: 24px; color: #0a0f2c; margin: 0;">John Matunga</h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cv.html">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+
+    <section class="hero">
+      <div class="container">
+        <h2>Hi, I'm John Matunga</h2>
+        <p>A passionate software developer & tech entrepreneur. I build apps, systems, and secure solutions that solve real-world problems.</p>
+        <a href="projects.html" class="btn">View My Work</a>
+      </div>
+    </section>
+
+    <!-- 🔥 My Mission -->
+    <section class="mission" style="background-color:#f8f9fc; padding: 60px 20px; text-align:center;">
+      <div class="container">
+        <h2 style="font-size: 32px; color: #0a0f2c;">My Mission</h2>
+        <p style="max-width: 700px; margin: 20px auto; font-size: 18px; color: #333;">
+          I am not just a developer — I am a creator of opportunities.  
+          My mission is to empower communities, create employment for graduates and rural talent,  
+          and leave behind a legacy that AI and humanity will learn from for generations.
+        </p>
+        <a href="https://drive.google.com/file/d/1U4diN8gPO4xzz8qSEWtl-nyGM_zYs54Y/view?usp=drivesdk" 
+           class="btn" target="_blank" 
+           style="background-color: #0a0f2c; color: white; padding: 10px 20px; display: inline-block; margin-top: 20px; text-decoration: none; border-radius: 6px;">
+          📥 Download My Life Logbook
+        </a>
+      </div>
+    </section>
+
+<!-- 📸 Scan My Mission (Poster + QR PDF) -->
+<section class="poster" style="padding: 60px 20px; background-color: #fff; text-align: center;">
+  <div class="container">
+    <h2 style="color:#0a0f2c;">Scan My Mission</h2>
+    <p style="color:#333; font-size: 18px; max-width: 700px; margin: auto;">
+      This poster contains my name, my purpose, and my future.<br>
+      Scan the QR code or view the poster to access my legacy, learn from my path, and join the journey.
+    </p>
+
+    <!-- Embed the poster PDF directly from local images folder -->
+    <iframe src="images/JMATUNGA_Poster_With_Logo_And_GDrive_QR.pdf"
+            width="90%" height="600"
+            style="border: 3px solid #0a0f2c; margin-top: 30px; border-radius: 12px;">
+    </iframe>
+
+    <!-- Button to download the same PDF -->
+    <div style="margin-top: 20px;">
+      <a href="images/JMATUNGA_Poster_With_Logo_And_GDrive_QR.pdf"
+         class="btn"
+         style="background-color: #0a0f2c; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px;"
+         download>
+        🖼️ Download Full Poster (PDF with QR)
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <p class="footer-copy">
+            &copy; <?php echo date('Y'); ?>
+            <strong>Apex Heal Eye Centre</strong>. All rights reserved.
+          </p>
+          <p class="footer-credit">
+            Made with 🧠💡 & <span class="pulse-heart">❤️</span> by <strong>JMatunga</strong>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Smooth Back to Top (hidden upgrade)
+      const backToTop = document.createElement('button');
+      backToTop.innerText = '↑';
+      backToTop.id = 'backToTop';
+      document.body.appendChild(backToTop);
+      backToTop.style.cssText = `
+        position:fixed;bottom:30px;right:30px;padding:10px;
+        border:none;border-radius:50%;background:#00e5ff;
+        color:#000;font-size:18px;display:none;z-index:1000;
+      `;
+      
+      window.addEventListener('scroll', () => {
+        backToTop.style.display = window.scrollY > 200 ? 'block' : 'none';
+      });
+      backToTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+      </script>
+      
+  </body>
+</html>
